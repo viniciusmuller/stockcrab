@@ -14,8 +14,11 @@
       {
         devShell = with pkgs; mkShell {
           buildInputs = [
-            gcc
-            gnumake
+            rust-analyzer
+            rustc
+            cargo
+            rustfmt
+            clippy
             nil
           ];
         };
